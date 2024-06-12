@@ -20,3 +20,4 @@ document.querySelectorAll('#sidebar ul li a').forEach(function(item) {
         this.classList.add('active');
     });
 });
+

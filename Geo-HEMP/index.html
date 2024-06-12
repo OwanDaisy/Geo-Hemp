@@ -9,31 +9,67 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/b3a87a3d26.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
-        <div id="logo">GeoCollaborative Health <br>
-             Emergency Management Platform(Geo-HEMP)</div>
-        <div id="nav-menu">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </div>
-        <div id="auth-buttons">
-            <a href="login.html" id="login-btn">Login</a>
-            <a href="signup.html" id="signup-btn">Sign Up</a>
+        <div id="logo">GeoCollaborative Health Emergency<br>
+              Management Platform(Geo-HEMP)</div>
+        <div id="right-header">
+            <div id="nav-menu">
+                <a href="#">GPS Traces</a>
+                <a href="#">User Diaries</a>
+                <a href="#">Communities</a>
+                <a href="#">Copyright</a>
+                <a href="#">Help</a>
+                <a href="#">About</a>
+            </div>
+            <div id="auth-buttons">
+                <a href="login.html" id="login-btn">Login</a>
+                <a href="signup.html" id="signup-btn">Sign Up</a>
+            </div>
         </div>
     </div>
     <div id="main-content">
         <div id="sidebar">
             <!-- <h2>Menu</h2> -->
+
+        
             <ul>
-                <li><a href="#"><i class="fas fa-database"></i> Database 1</a></li>
-                <li><a href="#"><i class="fas fa-database"></i> Database 2</a></li>
-                <li><a href="#"><i class="fas fa-server"></i> Platform 1</a></li>
-                <li><a href="#"><i class="fas fa-server"></i> Platform 2</a></li>
+                <ul class="bottom-line"><li><a href="#"><b>Home</b></a></li></ul>
+                <li ><div class="far-end"><a href="#" ><b>Area Explorer</b></a><i class="fa-solid fa-angle-down "></i></div>
+                    <ul class="bottom-line feat-show">
+                        <li class="submenu"><i class="fa-solid fa-angle-right"></i><a href="#">Sites Location</a></li>
+                        <li class="submenu"><i class="fa-solid fa-angle-right"></i><a href="#">District / Province</a></li>
+                        <li class="submenu"><i class="fa-solid fa-angle-right"></i><a href="#">Community / Area</a></li>
+                    </ul>
+                </li>
+
+                <li><div class="far-end"><a href="#"><b>Risk Assessment</b></a><i class="fa-solid fa-angle-down"></i></div>
+                    <ul class="bottom-line serv-show">
+                        <li class="submenu"><i class="fa-solid fa-angle-right"></i><a href="#">Vulnerabilities</a></li>
+                        <li class="submenu"><i class="fa-solid fa-angle-right"></i><a href="#">Historical data</a></li>
+                        <li class="submenu"><i class="fa-solid fa-angle-right"></i><a href="#">Projections</a></li>
+                    </ul>
+                </li> 
+
+                <ul class="bottom-line"><li><a href="#"><b>Event Monitoring</b></a></li></ul>
+
+                <li><div class="far-end"><a href="#"><b>Collaboration</b></a><i class="fa-solid fa-angle-down"></i></div>
+                    <ul class="bottom-line">
+                        <li class="submenu"><i class="fa-solid fa-angle-right"></i><a href="#">Share Reports</a></li>
+                        <li class="submenu"><i class="fa-solid fa-angle-right"></i><a href="#">Pictures / Videos</a></li>
+                        <li class="submenu"><i class="fa-solid fa-angle-right"></i><a href="#">Chat</a></li>
+                        <li class="submenu"><i class="fa-solid fa-angle-right"></i><a href="#">Collaborative Assessment</a></li>
+                    </ul>   
+                </li>
+                <li><a href="#"> Download data</a></li> 
+                
+                
             </ul>
+        
+       
+        
         </div>
         <div id="content">
             <div id="map"></div>
@@ -43,5 +79,6 @@
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
+    
 </body>
 </html>

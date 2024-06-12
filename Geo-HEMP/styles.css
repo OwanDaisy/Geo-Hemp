@@ -9,7 +9,7 @@ body {
 #header {
     width: 100%;
     background-color: #FFFFFF;
-    color: rgb(32, 57, 246);
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
     box-sizing: border-box;
     display: flex;
@@ -17,55 +17,67 @@ body {
     align-items: center;
 }
 
+#right-header{
+    
+    background-color: #FFFFFF;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 #logo {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 #nav-menu a {
-    color: rgb(45, 27, 244);
+    color: rgb(73, 72, 75);
     text-decoration: none;
-    margin: 0 10px;
-    font-size: 18px;
+    margin: 0 7px;
+    font-size: 12px;
 }
 
 #auth-buttons a {
-    color: white;
+    color: rgb(73, 72, 75);
     text-decoration: none;
-    margin: 0 5px;
     padding: 5px 10px;
-    background-color: #007bff;
+    font-size: 12px;
     border-radius: 5px;
+    border: 2px solid rgb(73, 72, 75) ;
 }
 
-#auth-buttons a#signup-btn {
-    background-color: #28a745;
-}
+
 
 #auth-buttons a:hover {
-    background-color: #0056b3;
+    background-color: rgb(44, 125, 192);
+    color: white;
 }
 
 #auth-buttons a#signup-btn:hover {
-    background-color: #218838;
+    background-color: rgb(44, 125, 192);
 }
 
 #main-content {
     display: flex;
-    flex: 1;
-    overflow: hidden;
+    flex-direction: row;
+    box-sizing: border-box;
+    border-top: 3px solid #ddd;
+    height: 100vh;
 }
 
 #sidebar {
     width: 250px;
     background-color: white;
-    color: blue;
+    color: rgb(44, 125, 192);
     height: 100%;
-    padding: 15px;
+    padding: 0 4px 10px 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #ddd;
+    border-right: 2px solid #ddd;
 }
 
 #sidebar h2 {
@@ -81,16 +93,19 @@ body {
 }
 
 #sidebar ul li {
-    margin: 10px 0;
+    
+    margin: 8px 0;
+    
 }
 
 #sidebar ul li a {
-    color: blue;
+    color: rgb(44, 125, 192);
     text-decoration: none;
     font-size: 18px;
     display: flex;
+    width: 100%;
     align-items: center;
-    padding: 10px;
+    padding: 6px 6px 6px 9px;
     border-radius: 5px;
 }
 
@@ -101,30 +116,54 @@ body {
 #sidebar ul li a:hover, 
 #sidebar ul li a:focus, 
 #sidebar ul li a:active {
-    background-color: #4f4fe9;
-    color: #0056b3;
+    background-color: rgb(44, 125, 192);
+    color: white;
+    margin-right: 20px;
 }
+
+i{
+    color: rgb(44, 125, 192);
+}
+.bottom-line{
+    box-sizing: border-box;
+    border-bottom: 3px solid rgb(201, 201, 201);
+}
+
+.submenu{
+    display: flex;
+    align-items: center;
+    border-radius: 1px;
+    padding: 0px 4px 0 4px;
+    width:100%;
+}
+
 
 #sidebar ul li a.active {
     background-color: #d3d3d3;
-    color: #0056b3;
+    color: rgb(44, 125, 192);
 }
 
+.far-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
 #content {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
     box-sizing: border-box;
-    position: relative;
+    
 }
 
 #map {
     width: 100%;
     height: 100%;
     border: 2px solid #e7edf2;
-    border-radius: 10px;
+    
 }
 
 @media (max-width: 768px) {
